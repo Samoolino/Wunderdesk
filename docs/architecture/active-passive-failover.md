@@ -56,6 +56,7 @@ A fencing token only protects the system if every path to order submission check
 Do not use “AWS credits exhausted” as the only failover signal.
 
 - AWS credits are applied to eligible charges until exhausted or expired.
+- If an account is on the AWS Free Plan, AWS requires upgrading to the Paid Plan when Free Tier credits are exhausted or after 184 days, whichever comes first. Do not treat a Free Plan account as an indefinite production host; upgrade and confirm billing before live deployment.
 - AWS billing and Budgets data is delayed; AWS says Budgets billing data is updated at least daily. It is not a real-time EC2 health signal.
 - Configure budget thresholds and a conservative estimated-cost threshold to start draining Account A before credits run out.
 - Also monitor payment method/account health, EC2 status checks, CPU/memory/disk, application heartbeat, worker queue lag and API errors.
