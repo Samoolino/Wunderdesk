@@ -42,9 +42,10 @@ Agent-driven, risk-gated trading orchestration for WunderTrading and connected e
 - Active/passive AWS failover: docs/architecture/active-passive-failover.md
 - WSL2 and AWS CLI runbook: docs/runbooks/wsl2-aws-setup.md
 - Live execution safety contract: docs/trading/execution-safety-contract.md
+- WunderTrading REST/MCP capability map: docs/integrations/wundertrading-api-capability-map.md
 
 ## Current integration observations
 
 The connected Upstash database wunderdeskv02state was reachable during setup (PING returned PONG) and had zero keys. It is on the Free plan in eu-central-1; it is suitable for development/paper testing, not as the sole production execution coordinator.
 
-The GitHub repository was empty when this baseline was prepared. These documents establish the architecture; they do not claim that AWS infrastructure, Vercel environment variables, exchange credentials, or live trading have been configured.
+The repository was initially empty. Architecture and runbook documents have now been committed. No AWS infrastructure, Vercel environment variables, exchange credentials, or live trading have been configured by those documentation commits.
