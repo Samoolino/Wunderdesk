@@ -1,0 +1,13 @@
+{
+  "name": "wunderdesk",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check api/status.js && node --check api/evaluate.js && node --check lib/risk.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
